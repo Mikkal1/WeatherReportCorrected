@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/logo.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Weather Report</title>
+</head>
+<body>
+    <h1>Weather Dashboard</h1>
+    <aside>
+        <h2>Search for a city:</h2>
+        <form id="form">
+            <input type="text" id="city" class="form-control" placeholder="San Diego" autocomplete="off" />
+            <button type="button" id="search" class="form-control">Search</button> 
+        </form>
+
+        <hr />
+
+        <ul id="history">
+        </ul>
+    </aside>
+
+    <article id="status">
+        <p>Please search for a city.</p>
+    </article>
+    <section id="report">
+        <article id="main">
+            <h2>
+                <span id="city-name">City</span> (<span id="date_0">9/13/2022</span>) 
+                <img id="icon_0" src="./Assets/logo.png" width="50px" />
+            </h2>
+            <p>Temp: <span id="temp_0">0</span>&deg;F</p>
+            <p>Wind: <span id="wind_0">0</span> MPH</p>
+            <p>Humidity: <span id="humidity_0">0</span>%</p>
+        </article>
+        <article id="forecast">
+            <h2>5-Day Forecast</h2>
+            <ul>
+                <li>
+                    <div>
+                        <h3><span id="date_1">9/13/2022</span></h3>
+                        <img id="icon_1" src="./Assets/logo.png" width="50px" />
+                        <p>Temp: <span id="temp_1">0</span>&deg;F</p>
+                        <p>Wind: <span id="wind_1">0</span> MPH</p>
+                        <p>Humidity: <span id="humidity_1">0</span>%</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3><span id="date_2">9/13/2022</span></h3>
+                        <img id="icon_2" src="./Assets/logo.png" width="50px" />
+                        <p>Temp: <span id="temp_2">0</span>&deg;F</p>
+                        <p>Wind: <span id="wind_2">0</span> MPH</p>
+                        <p>Humidity: <span id="humidity_2">0</span>%</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3><span id="date_3">9/13/2022</span></h3>
+                        <img id="icon_3" src="./Assets/logo.png" width="50px" />
+                        <p>Temp: <span id="temp_3">0</span>&deg;F</p>
+                        <p>Wind: <span id="wind_3">0</span> MPH</p>
+                        <p>Humidity: <span id="humidity_3">0</span>%</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3><span id="date_4">9/13/2022</span></h3>
+                        <img id="icon_4" src="./Assets/logo.png" width="50px" />
+                        <p>Temp: <span id="temp_4">0</span>&deg;F</p>
+                        <p>Wind: <span id="wind_4">0</span> MPH</p>
+                        <p>Humidity: <span id="humidity_4">0</span>%</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3><span id="date_5">9/13/2022</span></h3>
+                        <img id="icon_5" src="./Assets/logo.png" width="50px" />
+                        <p>Temp: <span id="temp_5">0</span>&deg;F</p>
+                        <p>Wind: <span id="wind_5">0</span> MPH</p>
+                        <p>Humidity: <span id="humidity_5">0</span>%</p>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="index.js" ></script>
+</body>
+</html>
